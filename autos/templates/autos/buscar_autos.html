@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Autos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Buscar Autos</h1>
+        <form method="get" action="{% url 'buscar_autos' %}">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Marca">
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" placeholder="Modelo">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <h2>Resultados de la Búsqueda</h2>
+        <ul>
+            {% for auto in autos %}
+                <li>{{ auto.marca }} {{ auto.modelo }} - <a href="{% url 'auto_detail' auto.id %}">Detalles</a></li>
+            {% empty %}
+                <li>No se encontraron autos.</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>
