@@ -12,7 +12,7 @@ Comision: **57810**
 Con este programa se busca facilitar el trabajo de las concesionarias, siendo que añaden los autos que tienen en stock a la base de datos, y los clientes pueden ir filtrando sus busquedas por marca, modelo y año. Se añadirian fotos y una descripcion detallada de cada vehiculo para asi mostrarlos y ofrecerlos al publico.
 
 # Usuarios
-Existen 2 superusuarios los cuales tienen todos los permisos (agregar, borrar y editar sobre los vehiculos en stock), y 3 usuarios normales los cuales simularian ser compradores, con lo cual, solo podrian ver los autos ofrecidos.
+Existen 2 superusuarios los cuales tienen todos los permisos (agregar, borrar y editar sobre los vehiculos en stock), y 3 usuarios normales los cuales simularian ser compradores, con lo cual, solo podrian ver los autos ofrecidos. Para poder ingresar al menu administrador de la pagina se debera de escribir en la url de la pagina, seguido a lo que ya esta **"/admin/"**. Alli se podran ver, agregar, editar o eliminar, tanto los usuarios como los vehiculos.
 Estos usuarios son:
 **SUPERUSUARIOS:** norman-norman123-norman@gmail.com / luan-luan123-luan@gmail.com
 
